@@ -1,0 +1,9 @@
+:root {
+  --space-x: 1.75em;
+}
+
+@media screen and (min-width: 30em) {
+  :root {
+    --space-x: 11em;
+  }
+}

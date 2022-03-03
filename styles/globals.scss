@@ -1,3 +1,5 @@
+@use "_variables.scss";
+
 html,
 body {
   font-size: 18px;
@@ -14,7 +16,9 @@ a {
   text-decoration: none;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -38,4 +42,14 @@ h6 {
 
 p {
   font-size: 1rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media screen and (min-width: 30em) {
+  .desktop-only {
+    display: unset;
+  }
 }
