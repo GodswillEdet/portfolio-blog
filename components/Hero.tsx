@@ -5,7 +5,9 @@ const Hero: React.FC = () => {
     <section aria-labelledby="hero-title" className={styles.hero_container}>
       <header id="hero-title" className={styles.hero_header}>
         <p>
-          <b>Hi, I am...</b>
+          <b>
+            <span className={styles.wave}>👋</span>, I am...
+          </b>
         </p>
         <h1>
           <span>[</span>Bao Huynh<span>]</span>
@@ -16,8 +18,11 @@ const Hero: React.FC = () => {
         </p>
       </header>
       <div className={styles.cta}>
-        <a href="#" className={styles.fill}>
-          <span className={styles.ctaText}>See my works</span>
+        <a href="#" className={styles.cta_main}>
+          <span>See my works</span>
+        </a>
+        <a href="#">
+          <span>About me</span>
         </a>
       </div>
     </section>
