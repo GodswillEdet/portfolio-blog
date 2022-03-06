@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import About from "../components/About";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +16,8 @@ const Home: NextPage = () => {
       <nav className={styles.nav}></nav>
       <main className={styles.main}>
         <Hero />
+        <About />
+        <Projects />
       </main>
     </>
   );

@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
+  h3 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 400;
+    color: #6c6c6c;
+  }
+
+  ul {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+    .intro {
+      flex-basis: 40%;
+    }
+    .skills {
+      flex-basis: 60%;
+    }
+  }
+}
