@@ -9,24 +9,26 @@ const About: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.intro}>
           <p>
-            Hi, I am Bao Huynh, a passionate web developer and a Computer Science at University of
-            Cincinnati.
+            Hi, I am Bao Huynh, a passionate web developer and a Computer Science student at
+            University of Cincinnati.
           </p>
           <p>
-            I enjoy making web applications that look great, feel fantastic, and function correctly
-            using modern technogies.
+            I enjoy making web applications that look great, feel fantastic, and perform well using
+            modern technogies.
           </p>
         </div>
         <div className={styles.skills}>
           <h3 className="title">Skills</h3>
           <ul>
-            <li>Github</li>
-            <li>Github</li>
-            <li>Github</li>
-            <li>Github</li>
-            <li>Github</li>
-            <li>Github</li>
-            <li>Github</li>
+            <li>Typescript</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>React.js</li>
+            <li>Express.js</li>
+            <li>HTML and CSS</li>
+            <li>MongoDB</li>
+            <li>Postgres SQL</li>
+            <li>Git/Github</li>
           </ul>
         </div>
       </div>
