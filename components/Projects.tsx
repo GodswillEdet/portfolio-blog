@@ -1,4 +1,5 @@
 import styles from "../styles/Projects.module.scss";
+import Project from "./ProjectCard";
 
 const Projects: React.FC = () => {
   return (
@@ -7,18 +8,9 @@ const Projects: React.FC = () => {
         My projects
       </h2>
       <div className={styles.list}>
-        <div className={styles.card}>
-          <h3>Project name</h3>
-          <p>Project description</p>
-        </div>
-        <div className={styles.card}>
-          <h3>Project name</h3>
-          <p>Project description</p>
-        </div>
-        <div className={styles.card}>
-          <h3>Project name</h3>
-          <p>Project description</p>
-        </div>
+        <Project />
+        <Project />
+        <Project />
       </div>
     </section>
   );
