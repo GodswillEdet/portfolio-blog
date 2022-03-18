@@ -9,13 +9,57 @@
   border-radius: 7px;
   position: relative;
   overflow: hidden;
+  transition: transform 500ms ease;
+}
 
-  h3 {
-    font-weight: 400;
+.content {
+  --padding: 1rem;
+  padding: var(--padding);
+  background: linear-gradient(rgba(#444, 0), rgba(#444, 0.15) 50%, rgba(#444, 0.5));
+
+  transition: transform 500ms ease;
+  transform: translateY(62%);
+
+  > *:not(.title) {
+    transition: opacity 500ms linear;
+    opacity: 0;
+  }
+}
+
+.title {
+  font-weight: 400;
+  position: relative;
+  width: max-content;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    // push it to the left an amount equal to padding so that it touches the left border
+    left: calc(-1 * var(--padding));
+    // extend width to accommodate for the left-push so that the bar still touches end of title
+    width: calc(100% + var(--padding));
+    height: 4px;
+    background: lightcoral;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+
+  .content {
+    transform: translateY(0%);
+    > * {
+      opacity: 1;
+    }
   }
 
-  > * {
-    margin: 0;
+  .title::after {
+    transform: scaleX(1);
   }
 }
 
@@ -30,27 +74,4 @@
   height: 100%;
   object-fit: cover;
   aspect-ratio: 16/9;
-}
-
-.content {
-  --padding: 1rem;
-  padding: var(--padding);
-  background: linear-gradient(rgba(#444, 0), rgba(#444, 0.15) 50%, rgba(#444, 0.6));
-}
-
-.title {
-  position: relative;
-  width: max-content;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 4px;
-    // push it to the left an amount equal to padding so that it touches the left border
-    left: calc(-1 * var(--padding));
-    // extend width to accommodate for the left-push so that the bar still touches end of title
-    width: calc(100% + var(--padding)); 
-    height: 4px;
-    background: lightcoral;
-  }
 }

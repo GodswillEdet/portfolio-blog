@@ -11,7 +11,7 @@ interface ProjectItemProps {
 const ProjectItem: React.FC<ProjectItemProps> = ({
   img = "laptop1.jpg",
   title = "Project heading",
-  desc = "Description",
+  desc = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis",
   github = "http://github.com",
   site,
 }) => {
