@@ -1,4 +1,5 @@
 import styles from "./ProjectItem.module.scss";
+import Image from "next/image";
 
 interface ProjectItemProps {
   title?: string;
@@ -17,7 +18,14 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 }) => {
   return (
     <div className={styles.card}>
-      <img src={img} alt="Project cover background" className={styles.background} />
+      <Image
+        className={styles.background}
+        alt="Project thumbnail"
+        src={`/${img}`}
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+      />
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
         <p>{desc}</p>
