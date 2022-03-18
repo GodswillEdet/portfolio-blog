@@ -29,9 +29,6 @@
   --padding: 1rem;
   padding: var(--padding);
   background: linear-gradient(rgba(#444, 0), rgba(#444, 0.15) 50%, rgba(#444, 0.3));
-
-  transition: transform 500ms ease;
-  transform: translateY(62%);
 }
 
 .title {
@@ -49,29 +46,40 @@
     width: calc(100% + var(--padding));
     height: 4px;
     background: #e63030;
+  }
+}
 
-    transform: scaleX(0);
-    transform-origin: left;
+// Hover animation with mobile fallback. Since mobile has no hover, no hover animations should run
+@media (hover) {
+  .content {
+    transform: translateY(62%);
     transition: transform 500ms ease;
-  }
-}
 
-.card:hover, .card:focus-within {
-  transform: scale(1.05);
-
-  .content {
-    transform: translateY(0%);
-    transition-delay: 250ms;
+    .title::after {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 500ms ease;
+    }
   }
 
-  .title::after {
-    transform: scaleX(1);
-  }
-}
+  .card:hover,
+  .card:focus-within {
+    transform: scale(1.05);
 
-.card:focus-within {
-  // Fix jumpy glitch when using keyboard navigation
-  .content {
-    transition-duration: 0ms;
+    .content {
+      transform: translateY(0%);
+      transition-delay: 250ms;
+    }
+
+    .title::after {
+      transform: scaleX(1);
+    }
+  }
+
+  .card:focus-within {
+    // Fix jumpy glitch when using keyboard navigation
+    .content {
+      transition-duration: 0ms;
+    }
   }
 }
