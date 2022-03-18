@@ -22,6 +22,7 @@ a {
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
 }
 
 section {
@@ -30,7 +31,10 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
+  padding-top: 4rem;
+  .title {
+    text-align: center;
+  }
 }
 
 h1 {
@@ -57,11 +61,6 @@ p {
 
 .desktop-only {
   display: none;
-}
-
-.title {
-  text-align: center;
-  margin: 0;
 }
 
 @media screen and (min-width: 30em) {

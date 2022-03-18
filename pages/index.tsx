@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import About from "../components/About";
+import { About } from "../components/About";
+import { Hero } from "../components/Hero";
+import { Projects } from "../components/Projects";
 
 const Home: NextPage = () => {
   return (
