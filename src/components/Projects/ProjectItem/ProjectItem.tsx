@@ -29,7 +29,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
         <p>{desc}</p>
-        <a href={github}>Github icon</a>
+        <a href={github} target="_blank" rel="noopener noreferrer">
+          Github icon
+        </a>
         {site && <a href={site}>Hyperlink icon</a>}
       </div>
     </div>
