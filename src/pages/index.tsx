@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.scss";
 import { About } from "../components/About";
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
+import { Header } from "../components/Header";
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +14,8 @@ const Home: NextPage = () => {
         <meta name="description" content="Bao Huynh's portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={styles.nav}></nav>
-      <main className={styles.main}>
+      <Header />
+      <main className={styles.main} id="site-main">
         <Hero />
         <About />
         <Projects />
