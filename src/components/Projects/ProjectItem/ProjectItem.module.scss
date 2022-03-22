@@ -20,6 +20,7 @@
 .content {
   --padding: 1rem;
   padding: var(--padding);
+  position: relative;
   background: linear-gradient(rgba(#444, 0), rgba(#444, 0.15) 50%, rgba(#444, 0.3));
 }
 
