@@ -7,6 +7,12 @@
 
 @media screen and (min-width: 30em) {
   :root {
+    --space-x: 5rem;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  :root {
     --space-x: 11rem;
   }
 }
