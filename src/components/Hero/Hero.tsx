@@ -13,8 +13,8 @@ const Hero: React.FC = () => {
           <span>[</span>Bao Huynh<span>]</span>
         </h1>
         <p className={styles.hero_subtitle}>
-          Web developer and student <span className="desktop-only">- </span>Computer Science
-          &apos;24
+          Web developer and student <span className={styles.subtitle_hyphen}>- </span>Computer
+          Science &apos;24
         </p>
       </header>
       <div className={styles.cta}>

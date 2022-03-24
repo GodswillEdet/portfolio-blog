@@ -7,6 +7,10 @@ const Header: React.FC = () => {
       <Link href="/">
         <a className={styles.logo}>BHUYNHDEV</a>
       </Link>
+      <input type="checkbox" id="nav-toggle" className={`${styles.toggle} mobile-only`} />
+      <label htmlFor="nav-toggle" className={`${styles.burger} mobile-only`}>
+        <span></span>
+      </label>
       <nav className={styles.nav}>
         <ul className={styles.menu}>
           <li>
@@ -14,6 +18,9 @@ const Header: React.FC = () => {
           </li>
           <li>
             <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#projects">Contact</a>
           </li>
         </ul>
       </nav>

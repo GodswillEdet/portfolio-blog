@@ -93,6 +93,10 @@
   }
 }
 
+.subtitle_hyphen {
+  display: none;
+}
+
 @media screen and (min-width: 30em) {
   .hero_header {
     text-align: left;
@@ -105,5 +109,9 @@
   .cta {
     justify-content: flex-start;
     flex-direction: row;
+  }
+
+  .subtitle_hyphen {
+    display: unset;
   }
 }
