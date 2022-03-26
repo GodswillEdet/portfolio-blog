@@ -1,5 +1,7 @@
 import styles from "./ProjectItem.module.scss";
 import Image from "next/image";
+import { Skill } from "../../../common/types";
+import SkillIcon from "../../shared/SkillIcon/SkillIcon";
 
 interface ProjectItemProps {
   title?: string;
@@ -7,12 +9,14 @@ interface ProjectItemProps {
   github?: string;
   site?: string;
   img?: string;
+  skills?: Skill[];
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
   img = "laptop1.jpg",
   title = "Project heading",
-  desc = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis",
+  desc = "A warehouse robot program that scans barcode and picks packages",
+  skills = ["React"],
   github = "http://github.com",
   site,
 }) => {
@@ -29,6 +33,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
         <p>{desc}</p>
+        <div className={styles.skills}>
+          {skills.length > 0 &&
+            skills.map((skill, i) => {
+              return <SkillIcon key={i} skill={skill} />;
+            })}
+        </div>
         <a href={github} target="_blank" rel="noopener noreferrer">
           Github icon
         </a>
