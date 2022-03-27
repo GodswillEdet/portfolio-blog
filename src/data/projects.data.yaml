@@ -1,0 +1,14 @@
+- title: Robot simulation
+  desc: A warehouse robot program that scans barcode and picks packages
+  img: laptop2-austindistel.jpg
+  skills: [Python, Matplotlib]
+
+- title: Timeblock Calendar
+  desc: A full-stack web app that integrates a calendar and a todolist
+  img: timeblock.png
+  skills: [JavaScript, React, Nodejs, MongoDB]
+
+- title: Photomosaic
+  desc: An automation script for creating photomosaic effect
+  img: mosaic.png
+  skills: [Python, Pillow]

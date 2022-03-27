@@ -1,12 +1,18 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import { About } from "../components/About";
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
 import { Header } from "../components/Header";
+import { ProjectItemProps } from "components/Projects/ProjectItem/ProjectItem";
+import projectsOverviewData from "data/projects.data.yaml";
 
-const Home: NextPage = () => {
+interface HomeStaticProps {
+  projectList: ProjectItemProps[];
+}
+
+const Home: NextPage<HomeStaticProps> = (props) => {
   return (
     <>
       <Head>
@@ -18,10 +24,16 @@ const Home: NextPage = () => {
       <main className={styles.main} id="site-main">
         <Hero />
         <About />
-        <Projects />
+        <Projects projectList={props.projectList} />
       </main>
     </>
   );
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps<HomeStaticProps> = () => {
+  return {
+    props: { projectList: projectsOverviewData },
+  };
+};

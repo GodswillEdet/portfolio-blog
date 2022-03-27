@@ -1,16 +1,22 @@
 import styles from "./Projects.module.scss";
-import Project from "../ProjectItem/ProjectItem";
+import Project, { ProjectItemProps } from "../ProjectItem/ProjectItem";
+import { GetStaticProps } from "next";
 
-const Projects: React.FC = () => {
+interface ProjectsProps {
+  projectList: ProjectItemProps[];
+}
+
+const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
   return (
     <section aria-labelledby="projects">
       <h2 id="projects" className="title">
         My projects
       </h2>
       <div className={styles.list}>
-        <Project />
-        <Project />
-        <Project />
+        {projectList.map((projectData, i) => (
+          <Project key={i} {...projectData} />
+        ))}
+        {/* <pre>{JSON.stringify(projectList, null, 2)}</pre> */}
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Skill } from "../../../common/types";
 import SkillIcon from "../../shared/SkillIcon/SkillIcon";
 
-interface ProjectItemProps {
+export interface ProjectItemProps {
   title?: string;
   desc?: string;
   github?: string;

@@ -4,6 +4,7 @@
 .card {
   max-width: 35ch;
   min-width: 27ch;
+  max-height: 20em;
   padding: 5em 0 0;
   box-shadow: 3px 3px 12px rgba(#333, 0.2);
   border-radius: 7px;
@@ -13,16 +14,26 @@
 }
 
 .background {
-  opacity: 0.8;
+  opacity: 0.3;
   pointer-events: none;
 }
 
 .content {
   --padding: 1rem;
-  $content-bg: #bdbdbd;
+  $content-bg: #5a5a5a;
   padding: var(--padding);
   position: relative;
-  background: linear-gradient(rgba($content-bg, 0), rgba($content-bg, 0.1) 50%, rgba($content-bg, 0.15));
+  background: linear-gradient(
+    rgba($content-bg, 0),
+    rgba($content-bg, 0.3) 50%,
+    rgba($content-bg, 0.6)
+  );
+}
+
+.skills {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .title {
@@ -46,7 +57,7 @@
 // Hover animation with mobile fallback. Since mobile has no hover, no hover animations should run
 @media (hover) {
   .content {
-    transform: translateY(67%);
+    transform: translateY(70%);
     transition: transform 500ms ease;
 
     .title::after {
