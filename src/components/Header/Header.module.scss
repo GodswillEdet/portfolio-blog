@@ -1,5 +1,5 @@
 .header {
-  --header-text: #f5f5f5;
+  --header-text: #f0f0f0;
   z-index: 999;
   position: fixed;
   top: 0;
@@ -10,9 +10,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-
   a:hover {
-    color: var(--clr-text);
+    color: var(--clr-bg);
   }
 }
 
@@ -96,14 +95,8 @@
     display: none;
   }
 
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .nav {
     all: unset;
-    grid-column: 2 / 3;
     .menu {
       flex-direction: row;
       gap: 1em;

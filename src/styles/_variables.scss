@@ -1,8 +1,9 @@
 :root {
   --space-x: 1.75rem;
-  --clr-primary: #d81125;
-  --clr-text: #303030;
-  --clr-bg: #f5f5f5;
+  --clr-primary: hsl(354, 85%, 45%);
+  --clr-primary-lighter: hsl(354, 65%, 45%);
+  --clr-text: #f0f0f0;
+  --clr-bg: #303030;
 }
 
 @media screen and (min-width: 30em) {

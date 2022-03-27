@@ -31,7 +31,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         quality={100}
       />
       <div className={styles.content}>
-        <h3 className={styles.title}>{title}</h3>
+        <div className={styles.titleBackground}>
+          <h3 className={styles.title}>{title}</h3>
+        </div>
         <p>{desc}</p>
         <div className={styles.skills}>
           {skills.length > 0 &&

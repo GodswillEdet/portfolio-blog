@@ -3,7 +3,7 @@
   img: laptop2-austindistel.jpg
   skills: [Python, Matplotlib]
 
-- title: Timeblock Calendar
+- title: Todo-Calendar
   desc: A full-stack web app that integrates a calendar and a todolist
   img: timeblock.png
   skills: [JavaScript, React, Nodejs, MongoDB]
