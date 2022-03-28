@@ -6,14 +6,15 @@
 .skills {
   h3 {
     text-align: center;
-    margin-top: 0;
     font-weight: 400;
     color: #b5b5b5;
+    margin: 10px auto;
   }
 
   ul {
     display: flex;
-    gap: 2em;
+    gap: 1em 2em;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
