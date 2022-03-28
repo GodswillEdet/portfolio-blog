@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <nav className={styles.nav}>
         <ul className={styles.menu}>
           <li>
-            <a href="#projects">About me</a>
+            <a href="#about">About me</a>
           </li>
           <li>
             <a href="#projects">Projects</a>
