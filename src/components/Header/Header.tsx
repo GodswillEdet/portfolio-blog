@@ -1,9 +1,14 @@
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 
 const Header: React.FC = () => {
+  const [offsetTop, setOffsetTop] = useState(0);
+  useEffect(() => {
+    document.onscroll = () => setOffsetTop(document.documentElement.scrollTop);
+  }, []);
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${offsetTop >= 50 ? styles.headerScrolled : ""}`}>
       <Link href="/">
         <a className={styles.logo}>BHUYNHDEV</a>
       </Link>

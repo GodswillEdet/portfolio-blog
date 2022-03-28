@@ -10,18 +10,20 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--clr-primary-darker);
+  background-color: transparent;
 
-  a:hover {
+  a:hover, a:focus {
     color: var(--clr-bg);
   }
+}
+
+.headerScrolled {
+  background-color: var(--clr-primary-darker);
 }
 
 .logo {
   letter-spacing: 1.5px;
   font-weight: 700;
-  vertical-align: middle;
-  height: fit-content;
 }
 
 .nav {
