@@ -11,15 +11,10 @@
   position: relative;
   overflow: hidden;
   transition: transform 500ms ease;
-  &:hover {
-    .background {
-      opacity: 0.2;
-    }
-  }
 }
 
 .background {
-  opacity: 0.8;
+  opacity: 0.4;
   pointer-events: none;
   object-position: 27% 50%;
 }
@@ -63,6 +58,9 @@
 
 // Hover animation with mobile fallback. Since mobile has no hover, no hover animations should run
 @media (hover) {
+  .background {
+    opacity: 0.8;
+  }
   .content {
     transform: translateY(70%);
     transition: transform 500ms ease;
@@ -85,6 +83,10 @@
 
     .title::after {
       transform: scaleX(1);
+    }
+
+    .background {
+      opacity: 0.2;
     }
   }
 

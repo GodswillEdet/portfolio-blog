@@ -6,10 +6,12 @@
   left: 0;
   font-size: 1.2rem;
   color: var(--header-text);
-  padding: 1rem var(--space-x);
+  padding: 0.7rem var(--space-x);
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: var(--clr-primary-darker);
+
   a:hover {
     color: var(--clr-bg);
   }
@@ -18,18 +20,25 @@
 .logo {
   letter-spacing: 1.5px;
   font-weight: 700;
+  vertical-align: middle;
+  height: fit-content;
 }
 
 .nav {
+  width: 100%;
   position: absolute;
+  background-color: inherit;
   right: 0;
   top: 100%;
   padding-right: inherit; // Need to inherit padding from <header> because <nav> is absolute positioned (thus taken out of flow)
   .menu {
+    // Extra bottom padding on mobile
+    padding-bottom: 10px;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     text-align: right;
+    gap: 0.7em;
     text-transform: uppercase;
     font-weight: 590;
     letter-spacing: 1px;
@@ -62,7 +71,7 @@
   height: 100%;
   top: 0;
   right: 0;
-  padding-right: inherit;
+  margin-right: var(--space-x);
   display: flex;
   align-items: center;
 
@@ -91,6 +100,11 @@
 }
 
 @media screen and (min-width: 70em) {
+  .header {
+    // Expand header padding a bit on desktop
+    padding: 0.85rem var(--space-x);
+  }
+  
   .burger {
     display: none;
   }
@@ -98,6 +112,7 @@
   .nav {
     all: unset;
     .menu {
+      padding: 0;
       flex-direction: row;
       gap: 1em;
       justify-content: flex-end;
