@@ -22,7 +22,6 @@
     text-shadow: 1px 1px 3px #444;
     color: var(--clr-primary);
     font-weight: 700;
-    font-size: 2.5em;
     letter-spacing: -1px;
     span {
       opacity: 0.8;
@@ -40,9 +39,9 @@
   a {
     text-align: center;
     padding: 0.7em;
-    width: clamp(200px, 15vw, 500px);
+    width: clamp(230px, 16vw, 550px);
     border-radius: 6px;
-    font-size: 1.3em;
+    font-size: 1.2rem;
     background: #404040;
     transition: transform 400ms ease;
     &:hover {
@@ -100,10 +99,6 @@
 @media screen and (min-width: 30em) {
   .hero_header {
     text-align: left;
-    font-size: 20px;
-    h1 {
-      font-size: 3.5em;
-    }
   }
 
   .cta {
