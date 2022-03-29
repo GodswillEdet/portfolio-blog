@@ -29,6 +29,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         layout="fill"
         objectFit="cover"
         quality={100}
+        priority={true}
       />
       <div className={styles.content}>
         <div className={styles.titleBackground}>
