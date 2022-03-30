@@ -28,14 +28,17 @@ a {
 
 section {
   width: 100%;
-  padding: 0 var(--space-x);
+  padding: 2.5rem var(--space-x);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 4rem;
   .title {
     text-align: center;
     margin-bottom: 0.75em;
+  }
+
+  &:nth-child(odd) {
+    background-color: var(--clr-bg-lighter);
   }
 }
 

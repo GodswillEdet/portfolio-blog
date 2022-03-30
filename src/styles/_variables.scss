@@ -1,19 +1,22 @@
+$white: hsl(0, 0%, 94%);
+$gray: hsl(0, 0%, 19%);
+$gray-lighter: hsl(0, 0%, 21%);
+$red: hsl(354, 85%, 45%);
+$red-darker: hsl(354, 65%, 41%);
+
 :root {
   --space-x: 1.75rem;
-  --clr-primary: hsl(354, 85%, 45%);
-  --clr-primary-darker: hsl(354, 65%, 41%);
-  --clr-text: #f0f0f0;
-  --clr-bg: #303030;
-}
+  --clr-primary: #{$red};
+  --clr-primary-darker: #{$red-darker};
+  --clr-text: #{$white};
+  --clr-bg: #{$gray};
+  --clr-bg-lighter: #{$gray-lighter};
 
-@media screen and (min-width: 30em) {
-  :root {
+  @media screen and (min-width: 30em) {
     --space-x: 5rem;
   }
-}
 
-@media screen and (min-width: 70em) {
-  :root {
+  @media screen and (min-width: 70em) {
     --space-x: 11rem;
   }
 }
