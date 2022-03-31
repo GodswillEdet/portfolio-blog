@@ -1,0 +1,18 @@
+@use "_variables" as var;
+
+:root {
+  --space-x: 1.75rem;
+  --clr-primary: #{var.$red};
+  --clr-primary-darker: #{var.$red-darker};
+  --clr-text: #{var.$white};
+  --clr-bg: #{var.$gray};
+  --clr-bg-lighter: #{var.$gray-lighter};
+
+  @media screen and (min-width: 30em) {
+    --space-x: 5rem;
+  }
+
+  @media screen and (min-width: 70em) {
+    --space-x: 11rem;
+  }
+}

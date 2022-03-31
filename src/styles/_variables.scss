@@ -3,20 +3,4 @@ $gray: hsl(0, 0%, 19%);
 $gray-lighter: hsl(0, 0%, 21%);
 $red: hsl(354, 85%, 45%);
 $red-darker: hsl(354, 65%, 41%);
-
-:root {
-  --space-x: 1.75rem;
-  --clr-primary: #{$red};
-  --clr-primary-darker: #{$red-darker};
-  --clr-text: #{$white};
-  --clr-bg: #{$gray};
-  --clr-bg-lighter: #{$gray-lighter};
-
-  @media screen and (min-width: 30em) {
-    --space-x: 5rem;
-  }
-
-  @media screen and (min-width: 70em) {
-    --space-x: 11rem;
-  }
-}
+$orange: hsl(22, 98%, 62%);
