@@ -4,12 +4,13 @@ import styles from "./SkillIcon.module.scss";
 
 interface SkillIconProps {
   skill: Skill;
+  size: number;
 }
 
-const SkillIcon: React.FC<SkillIconProps> = ({ skill }) => {
+const SkillIcon: React.FC<SkillIconProps> = ({ skill, size }) => {
   return (
     <figure className={styles.figure}>
-      <Icon name={skill} />
+      <Icon name={skill} size={size} />
       <figcaption>{skill}</figcaption>
     </figure>
   );

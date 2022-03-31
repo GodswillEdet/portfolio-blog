@@ -8,10 +8,7 @@ const About: React.FC = () => {
       </h2>
       <div className={styles.container}>
         <div className={styles.intro}>
-          <p>
-            Hi, I am Bao Huynh, a passionate web developer and a Computer Science student at
-            University of Cincinnati.
-          </p>
+          <p>Hi, I am Bao Huynh, a passionate web developer and a Computer Science student</p>
           <p>
             I enjoy making web applications that look great, feel fantastic, and perform well using
             modern technogies.

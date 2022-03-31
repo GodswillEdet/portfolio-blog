@@ -19,7 +19,7 @@ export const skillList = [
 
 export const socialList = ["Github", "Twitter", "LinkedIn"] as const;
 
-export const allIconList = [...skillList, ...socialList];
+export const allIconList = [...skillList, ...socialList, "phone", "email"] as const;
 
 export type Skill = typeof skillList[number];
 export type Social = typeof socialList[number];

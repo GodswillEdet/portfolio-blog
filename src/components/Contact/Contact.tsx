@@ -1,12 +1,21 @@
+import { Icon } from "components/shared/Icon";
 import Image from "next/image";
 import styles from "./Contact.module.scss";
 const Contact: React.FC = () => {
   return (
     <section aria-labelledby="contact" className={styles.contact}>
-      <div className={styles.info}>
+      <div className={styles.infoContainer}>
         <h2 id="contact">Leave me a message</h2>
-        <p>Tell me what I can do for you</p>
-        <h3></h3>
+        <p>I am always up for a good conversation</p>
+        <h3 className={styles.contactSubtitle}>Contact information</h3>
+        <p className={styles.info}>
+          <Icon name="phone" size={25} />
+          <span>xxx-xxx-xxxx</span>
+        </p>
+        <p className={styles.info}>
+          <Icon name="email" size={25} />
+          <span>xxxx@email.com</span>
+        </p>
       </div>
       <div className={styles.form}>
         <form action="" method="POST">

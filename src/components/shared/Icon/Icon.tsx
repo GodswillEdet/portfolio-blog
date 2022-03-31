@@ -5,13 +5,14 @@ import { Icon } from "../../../common/types";
 
 interface IconProps {
   name: Icon;
+  size: number;
 }
 
-const Icon: React.FC<IconProps> = ({ name }) => {
+const Icon: React.FC<IconProps> = ({ name, size }) => {
   return (
     <Image
-      width={30}
-      height={30}
+      width={size}
+      height={size}
       layout="fixed"
       src={getIconImagePath(name)}
       alt={`${name} icon`}

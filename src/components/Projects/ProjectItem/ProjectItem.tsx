@@ -39,7 +39,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <div className={styles.skills}>
           {skills.length > 0 &&
             skills.map((skill, i) => {
-              return <SkillIcon key={i} skill={skill} />;
+              return <SkillIcon key={i} skill={skill} size={30} />;
             })}
         </div>
         <a href={github} target="_blank" rel="noopener noreferrer">

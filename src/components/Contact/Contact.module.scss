@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 35px;
 }
 
 .formSection {
@@ -26,8 +27,20 @@
   }
 }
 
-.info {
+.infoContainer {
   text-align: center;
+  .info {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  .contactSubtitle {
+    margin: 0.5em 0;
+  }
 }
 
 .form {
@@ -71,17 +84,21 @@
 @media screen and (min-width: 50em) {
   .contact {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-between;
+    gap: 40px;
   }
 
-  .info {
+  .infoContainer {
     text-align: left;
-    max-width: 45%;
+    flex: 1;
+    .info {
+      justify-content: flex-start;
+    }
   }
 
   .form {
-    width: 50%;
+    flex: 1;
   }
 
   @media (hover) {
