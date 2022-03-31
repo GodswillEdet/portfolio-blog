@@ -7,6 +7,7 @@ import { Projects } from "../components/Projects";
 import { Header } from "../components/Header";
 import { ProjectItemProps } from "components/Projects/ProjectItem/ProjectItem";
 import projectsOverviewData from "data/projects.data.yaml";
+import { Contact } from "components/Contact";
 
 interface HomeStaticProps {
   projectList: ProjectItemProps[];
@@ -25,6 +26,7 @@ const Home: NextPage<HomeStaticProps> = (props) => {
         <Hero />
         <About />
         <Projects projectList={props.projectList} />
+        <Contact />
       </main>
     </>
   );

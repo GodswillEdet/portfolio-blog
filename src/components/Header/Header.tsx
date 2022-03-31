@@ -25,7 +25,7 @@ const Header: React.FC = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#projects">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

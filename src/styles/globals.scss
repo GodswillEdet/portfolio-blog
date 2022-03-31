@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: clamp(1.125rem, 0.27vw + 1rem, 1.563rem);
+  font-size: clamp(1.125rem, 0.2vw + 1rem, 1.563rem);
   scroll-behavior: smooth;
   scroll-padding-top: 3.8rem;
 }
@@ -32,7 +32,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .title {
+  .title-center {
     text-align: center;
     margin-bottom: 0.75em;
   }

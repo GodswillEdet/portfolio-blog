@@ -3,7 +3,7 @@ import styles from "./About.module.scss";
 const About: React.FC = () => {
   return (
     <section aria-labelledby="about" className={styles.about}>
-      <h2 id="about" className="title">
+      <h2 id="about" className="title-center">
         About me
       </h2>
       <div className={styles.container}>
@@ -18,7 +18,7 @@ const About: React.FC = () => {
           </p>
         </div>
         <div className={styles.skills}>
-          <h3 className="title">Skills</h3>
+          <h3 className="title-center">Skills</h3>
           <ul>
             <li>Typescript</li>
             <li>Python</li>

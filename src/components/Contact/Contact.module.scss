@@ -1,0 +1,93 @@
+.contact {
+  background-color: hsl(350, 70%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  label {
+    display: block;
+  }
+
+  input,
+  textarea {
+    padding: 0.5em;
+    width: 100%;
+  }
+}
+
+.info {
+  text-align: center;
+}
+
+.form {
+  width: 80%;
+}
+
+.submit {
+  all: unset;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 2.5em;
+  background-color: var(--clr-bg);
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.submitText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.arrow {
+ display: none;
+}
+
+@media screen and (min-width: 50em) {
+  .contact {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .info {
+    text-align: left;
+    max-width: 45%;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  @media (hover) {
+    .submitText {
+      display: inline-block;
+      transform: translateX(0%);
+      transition: transform 450ms ease;
+    }
+
+    .arrow {
+      position: absolute;
+      display: flex;
+      top: 50%;
+      left: 65%;
+      transform: translateY(0%);
+      opacity: 0;
+      transition: transform 450ms ease, opacity 450ms ease;
+    }
+
+    .submit:hover {
+      background-color: #ff792e;
+
+      .submitText {
+        transform: translateX(-20%);
+      }
+
+      .arrow {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

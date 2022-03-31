@@ -9,7 +9,7 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
   return (
     <section aria-labelledby="projects">
-      <h2 id="projects" className="title">
+      <h2 id="projects" className="title-center">
         My projects
       </h2>
       <div className={styles.list}>
