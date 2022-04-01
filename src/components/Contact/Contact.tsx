@@ -20,16 +20,16 @@ const Contact: React.FC = () => {
       <div className={styles.form}>
         <form action="" method="POST">
           <div className={styles.formSection}>
+            <input type="text" name="name" id="name-input" required />
             <label htmlFor="name-input">Name</label>
-            <input type="text" name="name" id="name-input" />
           </div>
           <div className={styles.formSection}>
+            <input type="email" name="email" id="email-input" required />
             <label htmlFor="email-input">Email</label>
-            <input type="email" name="email" id="email-input" />
           </div>
           <div className={styles.formSection}>
+            <textarea name="message" id="message-input" required />
             <label htmlFor="message-input">Message</label>
-            <textarea name="message" id="message-input" />
           </div>
           <div className={styles.formSection}>
             <button type="submit" className={styles.submit}>

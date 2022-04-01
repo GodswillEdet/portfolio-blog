@@ -1,6 +1,6 @@
-@use "../../styles/variables";
+@use "../../styles/variables" as var;
+
 .contact {
-  background-color: hsl(350, 70%, 50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,9 +8,16 @@
 }
 
 .formSection {
+  display: flex;
+  // Need column-reverse because I need to put label after input element
+  // So that I can use sibling selector to add asterisk to required labels
+  flex-direction: column-reverse;
   margin-bottom: 0.65em;
-  label {
-    display: block;
+
+  *[required] + label::after {
+    content: "*";
+    margin-left: 5px;
+    color: #e32;
   }
 
   input,
@@ -19,12 +26,15 @@
     width: 100%;
     border-radius: 4px;
     border: none;
+    background-color: #444;
+    color: var(--clr-text);
 
     &:focus,
     &:focus-within {
-      outline: 2px solid black;
+      outline: #80bdff 2px solid;
+      box-shadow: 0 0 4px rgba(#80bdff, 0.5);
     }
-  }
+  }  
 }
 
 .infoContainer {
@@ -66,6 +76,7 @@
   border-radius: 15px;
   position: relative;
   border: none;
+  background-color: var(--clr-primary);
 }
 
 .submitText {
@@ -84,9 +95,13 @@
 @media screen and (min-width: 50em) {
   .contact {
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
+
+    h2 {
+      text-align: left;
+    }
   }
 
   .infoContainer {
@@ -98,6 +113,7 @@
   }
 
   .form {
+    margin-top: 1.3em;
     flex: 1;
   }
 
@@ -118,8 +134,9 @@
       transition: transform 450ms ease, opacity 450ms ease;
     }
 
-    .submit:hover {
-      background-color: variables.$orange;
+    .submit:hover,
+    .submit:focus-within {
+      background-color: var.$orange;
 
       .submitText {
         transform: translateX(-20%);

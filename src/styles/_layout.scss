@@ -1,0 +1,33 @@
+section {
+  width: 100%;
+  padding: 2.5rem var(--space-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:nth-of-type(odd) {
+    background-color: var(--clr-bg-lighter);
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (hover) {
+  // Should only show this bar effect on hover-able devices
+  // Else it will "compete" visually with project card bars
+  section h2 {
+    position: relative;
+    &::after {
+      content: "";
+      background-color: var(--clr-primary);
+      position: absolute;
+      width: 2.5em;
+      height: 3px;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+  }
+}

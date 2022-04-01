@@ -5,8 +5,8 @@
   --clr-primary: #{var.$red};
   --clr-primary-darker: #{var.$red-darker};
   --clr-text: #{var.$white};
-  --clr-bg: #{var.$gray};
-  --clr-bg-lighter: #{var.$gray-lighter};
+  --clr-bg: #{var.$black};
+  --clr-bg-lighter: #{var.$gray};
 
   @media screen and (min-width: 30em) {
     --space-x: 5rem;

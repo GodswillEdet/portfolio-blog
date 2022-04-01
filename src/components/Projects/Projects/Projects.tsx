@@ -9,9 +9,9 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
   return (
     <section aria-labelledby="projects">
-      <h2 id="projects" className="title-center">
-        My projects
-      </h2>
+      <header id="projects" className={styles.header}>
+        <h2>Projects</h2>
+      </header>
       <div className={styles.list}>
         {projectList.map((projectData, i) => (
           <Project key={i} {...projectData} />
