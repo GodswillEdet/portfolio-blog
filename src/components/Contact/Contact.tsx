@@ -22,7 +22,9 @@ const Contact: React.FC = () => {
         </p>
       </div>
       <div className={styles.form}>
-        <form action="" method="POST">
+        <form name="contact-form" action="/" method="POST" data-netlify="true">
+          {/* To use Netlify form */}
+          <input type="hidden" name="form-name" value="contact-form" />
           <div className={styles.formSection}>
             <input type="text" name="name" id="name-input" required />
             <label htmlFor="name-input">Name</label>
