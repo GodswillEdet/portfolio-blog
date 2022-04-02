@@ -1,6 +1,7 @@
-.container {
+.content {
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
 }
 
 .skills {
@@ -20,7 +21,7 @@
 }
 
 @media screen and (min-width: 30em) {
-  .container {
+  .content {
     flex-direction: row;
     align-items: center;
     gap: 3em;

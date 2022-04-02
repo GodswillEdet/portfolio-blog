@@ -1,6 +1,6 @@
 import styles from "./Projects.module.scss";
 import Project, { ProjectItemProps } from "../ProjectItem/ProjectItem";
-import { GetStaticProps } from "next";
+import { WatermarkHeader } from "components/shared/WatermarkHeader";
 
 interface ProjectsProps {
   projectList: ProjectItemProps[];
@@ -9,9 +9,9 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
   return (
     <section aria-labelledby="projects">
-      <header id="projects" className={styles.header}>
-        <h2>Projects</h2>
-      </header>
+      <WatermarkHeader text="Projects">
+        <h2 id="projects">Projects</h2>
+      </WatermarkHeader>
       <div className={styles.list}>
         {projectList.map((projectData, i) => (
           <Project key={i} {...projectData} />

@@ -7,6 +7,10 @@
   gap: 35px;
 }
 
+.title {
+  margin-bottom: 0.4em;
+}
+
 .formSection {
   display: flex;
   // Need column-reverse because I need to put label after input element

@@ -5,8 +5,12 @@ const Contact: React.FC = () => {
   return (
     <section aria-labelledby="contact" className={styles.contact}>
       <div className={styles.infoContainer}>
-        <h2 id="contact">Leave me a message</h2>
-        <p>I am always up for a good conversation</p>
+        <header>
+          <h2 id="contact" className={styles.title}>
+            Leave me a message
+          </h2>
+          <p>I am always up for a good conversation</p>
+        </header>
         <h3 className={styles.contactSubtitle}>Contact information</h3>
         <p className={styles.info}>
           <Icon name="phone" size={25} />
