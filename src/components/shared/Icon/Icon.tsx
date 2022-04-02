@@ -16,6 +16,7 @@ const Icon: React.FC<IconProps> = ({ name, size }) => {
       layout="fixed"
       src={getIconImagePath(name)}
       alt={`${name} icon`}
+      priority={true}
     />
   );
 };
