@@ -1,7 +1,6 @@
-import { getIconImagePath } from "../../../common/utilities";
+import { getIconImagePath } from "common/utilities";
 import Image from "next/image";
-import styles from "./Icon.module.scss";
-import { Icon } from "../../../common/types";
+import { Icon } from "common/types";
 
 interface IconProps {
   name: Icon;

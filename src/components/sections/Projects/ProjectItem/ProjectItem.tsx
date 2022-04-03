@@ -1,7 +1,7 @@
 import styles from "./ProjectItem.module.scss";
 import Image from "next/image";
-import { Skill } from "../../../common/types";
-import SkillIcon from "../../shared/SkillIcon/SkillIcon";
+import { Skill } from "common/types";
+import SkillIcon from "components/shared/SkillIcon/SkillIcon";
 
 export interface ProjectItemProps {
   title?: string;

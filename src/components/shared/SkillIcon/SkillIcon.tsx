@@ -1,4 +1,4 @@
-import { Skill } from "../../../common/types";
+import { Skill } from "common/types";
 import { Icon } from "../Icon";
 import styles from "./SkillIcon.module.scss";
 
