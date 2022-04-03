@@ -25,7 +25,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       <Image
         className={styles.background}
         alt="Project thumbnail"
-        src={`/${img}`}
+        src={`/images/${img}`}
         layout="fill"
         objectFit="cover"
         quality={100}
