@@ -4,7 +4,7 @@ interface WatermarkHeaderProps {
   text: string;
 }
 
-const WatermarkHeader: React.FC<WatermarkHeaderProps> = ({ text, children }) => {
+export const WatermarkHeader: React.FC<WatermarkHeaderProps> = ({ text, children }) => {
   return (
     <header className={styles.header}>
       {children}
@@ -12,5 +12,3 @@ const WatermarkHeader: React.FC<WatermarkHeaderProps> = ({ text, children }) => 
     </header>
   );
 };
-
-export default WatermarkHeader;

@@ -1,7 +1,8 @@
-import { Icon } from "components/shared/Icon";
+import { Icon } from "components/shared";
 import Image from "next/image";
 import styles from "./Contact.module.scss";
-const Contact: React.FC = () => {
+
+export const Contact: React.FC = () => {
   return (
     <section aria-labelledby="contact" className={styles.contact}>
       <div className={styles.infoContainer}>
@@ -56,5 +57,3 @@ const Contact: React.FC = () => {
     </section>
   );
 };
-
-export default Contact;

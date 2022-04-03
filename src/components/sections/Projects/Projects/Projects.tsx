@@ -1,13 +1,13 @@
 import styles from "./Projects.module.scss";
-import { WatermarkHeader } from "components/shared/WatermarkHeader";
+import { WatermarkHeader } from "components/shared";
 import { ProjectInfo } from "common/types";
-import ProjectItem from "../ProjectItem/ProjectItem";
+import { ProjectItem } from "../ProjectItem";
 
 interface ProjectsProps {
   projectList: ProjectInfo[];
 }
 
-const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
+export const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
   return (
     <section aria-labelledby="projects">
       <WatermarkHeader text="Projects">
@@ -22,5 +22,3 @@ const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
     </section>
   );
 };
-
-export default Projects;

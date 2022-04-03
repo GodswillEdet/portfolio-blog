@@ -7,7 +7,7 @@ interface SkillIconProps {
   size: number;
 }
 
-const SkillIcon: React.FC<SkillIconProps> = ({ skill, size }) => {
+export const SkillIcon: React.FC<SkillIconProps> = ({ skill, size }) => {
   return (
     <figure className={styles.figure}>
       <Icon name={skill} size={size} />
@@ -15,5 +15,3 @@ const SkillIcon: React.FC<SkillIconProps> = ({ skill, size }) => {
     </figure>
   );
 };
-
-export default SkillIcon;

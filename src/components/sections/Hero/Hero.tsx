@@ -1,6 +1,6 @@
 import styles from "./Hero.module.scss";
 
-const Hero: React.FC = () => {
+export const Hero: React.FC = () => {
   return (
     <section aria-labelledby="hero" className={styles.hero}>
       <header id="hero" className={styles.hero_header}>
@@ -28,5 +28,3 @@ const Hero: React.FC = () => {
     </section>
   );
 };
-
-export default Hero;

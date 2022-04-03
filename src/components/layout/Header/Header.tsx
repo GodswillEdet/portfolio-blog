@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   const [offsetTop, setOffsetTop] = useState(0);
   useEffect(() => {
     document.onscroll = () => setOffsetTop(document.documentElement.scrollTop);
@@ -32,5 +32,3 @@ const Header: React.FC = () => {
     </header>
   );
 };
-
-export default Header;

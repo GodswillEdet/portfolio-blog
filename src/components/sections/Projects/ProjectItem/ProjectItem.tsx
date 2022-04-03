@@ -1,11 +1,11 @@
 import styles from "./ProjectItem.module.scss";
 import Image from "next/image";
 import { ProjectInfo } from "common/types";
-import SkillIcon from "components/shared/SkillIcon/SkillIcon";
+import { SkillIcon } from "components/shared";
 
 interface ProjectItemProps extends ProjectInfo {}
 
-const ProjectItem: React.FC<ProjectItemProps> = ({
+export const ProjectItem: React.FC<ProjectItemProps> = ({
   img = "laptop1.jpg",
   title = "Project heading",
   desc = "A warehouse robot program that scans barcode and picks packages",
@@ -43,5 +43,3 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
     </div>
   );
 };
-
-export default ProjectItem;

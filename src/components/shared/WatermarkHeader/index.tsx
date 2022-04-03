@@ -1,1 +1,1 @@
-export { default as WatermarkHeader } from "./WatermarkHeader";
+export * from "./WatermarkHeader";

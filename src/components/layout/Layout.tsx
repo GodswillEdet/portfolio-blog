@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Header } from "./Header";
 
-const Layout: React.FC = (props) => {
+export const Layout: React.FC = (props) => {
   return (
     <>
       <Head>
@@ -9,10 +9,8 @@ const Layout: React.FC = (props) => {
         <meta name="description" content="Bao Huynh's portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header /> <Header />
+      <Header />
       {props.children}
     </>
   );
 };
-
-export default Layout;

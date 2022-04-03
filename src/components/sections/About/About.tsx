@@ -1,7 +1,7 @@
 import { WatermarkHeader } from "components/shared/WatermarkHeader";
 import styles from "./About.module.scss";
 
-const About: React.FC = () => {
+export const About: React.FC = () => {
   return (
     <section aria-labelledby="about" className={styles.about}>
       <WatermarkHeader text="About me">
@@ -33,5 +33,3 @@ const About: React.FC = () => {
     </section>
   );
 };
-
-export default About;
