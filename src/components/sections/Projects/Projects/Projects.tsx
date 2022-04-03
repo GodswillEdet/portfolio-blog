@@ -1,9 +1,10 @@
 import styles from "./Projects.module.scss";
-import Project, { ProjectItemProps } from "../ProjectItem/ProjectItem";
 import { WatermarkHeader } from "components/shared/WatermarkHeader";
+import { ProjectInfo } from "common/types";
+import ProjectItem from "../ProjectItem/ProjectItem";
 
 interface ProjectsProps {
-  projectList: ProjectItemProps[];
+  projectList: ProjectInfo[];
 }
 
 const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
@@ -14,7 +15,7 @@ const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
       </WatermarkHeader>
       <div className={styles.list}>
         {projectList.map((projectData, i) => (
-          <Project key={i} {...projectData} />
+          <ProjectItem key={i} {...projectData} />
         ))}
         {/* <pre>{JSON.stringify(projectList, null, 2)}</pre> */}
       </div>

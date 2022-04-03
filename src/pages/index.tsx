@@ -2,10 +2,10 @@ import type { GetStaticProps, NextPage } from "next";
 import styles from "styles/Home.module.scss";
 import { About, Hero, Contact, Projects } from "components/sections";
 import projectsOverviewData from "data/projects.data.yaml";
-import { ProjectItemProps } from "components/sections/Projects/ProjectItem/ProjectItem";
+import { ProjectInfo } from "common/types";
 
 interface HomeStaticProps {
-  projectList: ProjectItemProps[];
+  projectList: ProjectInfo[];
 }
 
 const Home: NextPage<HomeStaticProps> = (props) => {

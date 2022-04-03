@@ -1,5 +1,5 @@
 declare module "data/projects.data.yaml" {
-  import { ProjectItemProps } from "components/Projects/ProjectItem/ProjectItem";
-  const data: ProjectItemProps[];
+  import { ProjectInfo } from "common/types";
+  const data: ProjectInfo[];
   export default data;
 }

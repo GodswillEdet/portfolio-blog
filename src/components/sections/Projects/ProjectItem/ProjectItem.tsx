@@ -1,16 +1,9 @@
 import styles from "./ProjectItem.module.scss";
 import Image from "next/image";
-import { Skill } from "common/types";
+import { ProjectInfo } from "common/types";
 import SkillIcon from "components/shared/SkillIcon/SkillIcon";
 
-export interface ProjectItemProps {
-  title?: string;
-  desc?: string;
-  github?: string;
-  site?: string;
-  img?: string;
-  skills?: Skill[];
-}
+interface ProjectItemProps extends ProjectInfo {}
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
   img = "laptop1.jpg",
