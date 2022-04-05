@@ -1,9 +1,9 @@
 import { Icon } from "./types";
 
-export function getIconImagePath(skill: Icon) {
+export function getIconImagePath(iconName: Icon) {
   const prefix = "/icons/";
   let postfix: string;
-  switch (skill) {
+  switch (iconName) {
     // Special cases
     case "Pillow":
       postfix = "pillow.png";
@@ -12,7 +12,7 @@ export function getIconImagePath(skill: Icon) {
       postfix = "cpp.svg";
       break;
     default:
-      postfix = `${skill.toLowerCase()}.svg`;
+      postfix = `${iconName.toLowerCase()}.svg`;
       break;
   }
   return prefix + postfix;

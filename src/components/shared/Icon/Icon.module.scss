@@ -1,0 +1,18 @@
+.skillIcon {
+  margin: 0;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  figcaption {
+    color: #e0e0e0;
+    font-size: 0.85rem;
+  }
+}
+
+.socialIcon {
+  &:hover {
+    opacity: 0.5;
+  }
+}

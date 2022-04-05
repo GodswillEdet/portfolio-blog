@@ -1,7 +1,7 @@
 import styles from "./ProjectItem.module.scss";
 import Image from "next/image";
 import { ProjectInfo } from "common/types";
-import { SkillIcon } from "components/shared";
+import { Icon } from "components/shared";
 
 interface ProjectItemProps extends ProjectInfo {}
 
@@ -32,7 +32,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({
         <div className={styles.skills}>
           {skills.length > 0 &&
             skills.map((skill, i) => {
-              return <SkillIcon key={i} skill={skill} size={30} />;
+              return <Icon key={i} type="skill" iconName={skill} size={30} />;
             })}
         </div>
         <a href={github} target="_blank" rel="noopener noreferrer">

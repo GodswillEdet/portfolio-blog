@@ -14,11 +14,11 @@ export const Contact: React.FC = () => {
         </header>
         <h3 className={styles.contactSubtitle}>Contact information</h3>
         <p className={styles.info}>
-          <Icon name="phone" size={25} />
+          <Icon type="static" iconName="phone" size={25} />
           <span>xxx-xxx-xxxx</span>
         </p>
         <p className={styles.info}>
-          <Icon name="email" size={25} />
+          <Icon type="static" iconName="email" size={25} />
           <span>xxxx@email.com</span>
         </p>
       </div>
