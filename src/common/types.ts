@@ -17,7 +17,7 @@ const skillList = [
   "VsCode",
 ] as const;
 
-const socialList = ["Github", "Twitter", "LinkedIn"] as const;
+const socialList = ["Github", "Twitter", "LinkedIn", "Instagram"] as const;
 
 const allIconList = [...skillList, ...socialList, "phone", "email"] as const;
 
