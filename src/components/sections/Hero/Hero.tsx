@@ -1,3 +1,4 @@
+import { Icon } from "components/shared";
 import styles from "./Hero.module.scss";
 
 export const Hero: React.FC = () => {
@@ -24,6 +25,20 @@ export const Hero: React.FC = () => {
         <a href="#about">
           <span>About me</span>
         </a>
+      </div>
+      <div className={styles.socials}>
+        <ul>
+          <li>
+            <a href="https://github.com/bhuynhdev">
+              <Icon type="social" iconName="Github" size={35} />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/bhuynhtweet">
+              <Icon type="social" iconName="Twitter" size={35} />
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   );

@@ -55,6 +55,15 @@
   }
 }
 
+.socials {
+  margin-top: 1em;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+  }
+}
+
 .wave {
   // Credit: https://jarv.is/notes/css-waving-hand-emoji/
   font-size: 2.5rem;
