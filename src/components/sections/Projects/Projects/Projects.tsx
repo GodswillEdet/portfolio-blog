@@ -17,7 +17,6 @@ export const Projects: React.FC<ProjectsProps> = ({ projectList }) => {
         {projectList.map((projectData, i) => (
           <ProjectItem key={i} {...projectData} />
         ))}
-        {/* <pre>{JSON.stringify(projectList, null, 2)}</pre> */}
       </div>
     </section>
   );

@@ -11,6 +11,7 @@
   position: relative;
   overflow: hidden;
   transition: transform 500ms ease;
+  --content-padding: 1rem;
 }
 
 .background {
@@ -20,15 +21,17 @@
 }
 
 .content {
-  --padding: 1rem;
   $content-bg: #5a5a5a;
-  padding: var(--padding);
   position: relative;
   background: linear-gradient(
     rgba($content-bg, 0),
     rgba($content-bg, 0.3) 50%,
     rgba($content-bg, 0.6)
   );
+}
+
+.description {
+  padding: 0.25em var(--content-padding);
 }
 
 .skills {
@@ -39,6 +42,7 @@
 
 .title {
   font-weight: 400;
+  padding: 0 var(--content-padding);
   position: relative;
   width: max-content;
   text-shadow: 1px 1px 3px rgba(#444, 0.5);
@@ -46,13 +50,44 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: 999;
     bottom: 4px;
-    // push it to the left an amount equal to padding so that it touches the left border
-    left: calc(-1 * var(--padding));
-    // extend width to accommodate for the left-push so that the bar still touches end of title
-    width: calc(100% + var(--padding));
+    left: 0;
+    width: calc(100% - var(--content-padding));
     height: 4px;
     background: #e63030;
+  }
+}
+
+.footer {
+  font-size: 0.8rem;
+  height: 2.5rem;
+  padding: 0 var(--content-padding);
+  border-top: 1px solid rgba(#fff, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .externalLinks {
+    display: flex;
+    gap: 1em;
+    a {
+      display: flex;
+      &:hover {
+        opacity: 0.65;
+      }
+    }
+  }
+
+  .blogLink {
+    padding: 0.3em 1.2em;
+    border: 2px solid rgba(#fff, 0.5);
+    border-radius: 0.5em;
+
+    &:hover {
+      background: var(--clr-text);
+      color: var(--clr-bg);
+    }
   }
 }
 
@@ -62,7 +97,7 @@
     opacity: 0.8;
   }
   .content {
-    transform: translateY(69%);
+    transform: translateY(75%);
     transition: transform 500ms ease;
 
     .title::after {

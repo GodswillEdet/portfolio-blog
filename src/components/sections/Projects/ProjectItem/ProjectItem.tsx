@@ -10,7 +10,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({
   title = "Project heading",
   desc = "A warehouse robot program that scans barcode and picks packages",
   skills = ["React"],
-  github = "http://github.com",
+  repo = "http://github.com",
   site,
 }) => {
   return (
@@ -25,20 +25,35 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({
         priority={true}
       />
       <div className={styles.content}>
-        <div className={styles.titleBackground}>
-          <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>{title}</h3>
+
+        <div className={styles.description}>
+          <p>{desc}</p>
+          <div className={styles.skills}>
+            {skills.length > 0 &&
+              skills.map((skill, i) => {
+                return <Icon key={`${skill}-${i}`} type="skill" iconName={skill} size={30} />;
+              })}
+          </div>
         </div>
-        <p>{desc}</p>
-        <div className={styles.skills}>
-          {skills.length > 0 &&
-            skills.map((skill, i) => {
-              return <Icon key={i} type="skill" iconName={skill} size={30} />;
-            })}
+
+        <div className={styles.footer}>
+          <div className={styles.externalLinks}>
+            <a href={repo} target="_blank" rel="noopener noreferrer">
+              <Icon type="static" iconName="repo" size={20} />
+            </a>
+            {site && (
+              <a href={site}>
+                <Icon type="static" iconName="hyperlink" size={20} />
+              </a>
+            )}
+          </div>
+          <div>
+            <a href="/#" className={styles.blogLink}>
+              Learn more
+            </a>
+          </div>
         </div>
-        <a href={github} target="_blank" rel="noopener noreferrer">
-          Github icon
-        </a>
-        {site && <a href={site}>Hyperlink icon</a>}
       </div>
     </div>
   );

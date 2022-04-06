@@ -2,13 +2,16 @@
   desc: A warehouse robot program that scans barcode and picks packages
   img: laptop2-austindistel.jpg
   skills: [Python, Matplotlib]
+  repo: https://github.com/bhuynhdev/ENED-1120-Robotics-Proj5
 
 - title: Todo-Calendar
   desc: A full-stack web app that integrates a calendar and a todolist
   img: timeblock.png
   skills: [JavaScript, React, Nodejs, MongoDB]
+  repo: https://github.com/bhuynhdev/Habitica-Calendia
 
 - title: Photomosaic
   desc: An automation script for creating photomosaic effect
   img: mosaic.png
   skills: [Python, Pillow]
+  repo: https://github.com/bhuynhdev/photomosaics
