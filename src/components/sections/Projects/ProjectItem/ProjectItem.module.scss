@@ -2,16 +2,17 @@
 // https://www.youtube.com/watch?v=5DEq5cWNYt8&t=203s
 
 .card {
+  --content-padding: 1rem;
+
   max-width: 35ch;
   min-width: 27ch;
-  max-height: 20em;
-  padding: 5em 0 0;
+  max-height: 23em;
+  padding: 6em 0 0;
   box-shadow: 3px 3px 12px rgba(#333, 0.2);
   border-radius: 7px;
   position: relative;
   overflow: hidden;
   transition: transform 500ms ease;
-  --content-padding: 1rem;
 }
 
 .background {
@@ -31,7 +32,7 @@
 }
 
 .description {
-  padding: 0.25em var(--content-padding);
+  padding: 0.3em var(--content-padding);
 }
 
 .skills {
@@ -51,7 +52,7 @@
     content: "";
     position: absolute;
     z-index: 999;
-    bottom: 4px;
+    bottom: 0;
     left: 0;
     width: calc(100% - var(--content-padding));
     height: 4px;
@@ -97,7 +98,7 @@
     opacity: 0.8;
   }
   .content {
-    transform: translateY(75%);
+    transform: translateY(74%);
     transition: transform 500ms ease;
 
     .title::after {

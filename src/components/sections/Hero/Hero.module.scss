@@ -56,6 +56,8 @@
 }
 
 .socials {
+  display: flex;
+  justify-content: center;
   margin-top: 2em;
   ul {
     list-style: none;
@@ -113,6 +115,10 @@
   .cta {
     justify-content: flex-start;
     flex-direction: row;
+  }
+
+  .socials {
+    justify-content: flex-start;
   }
 
   .subtitle_hyphen {
