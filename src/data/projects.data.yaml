@@ -9,6 +9,7 @@
   img: timeblock.png
   skills: [JavaScript, React, Nodejs, MongoDB]
   repo: https://github.com/bhuynhdev/Habitica-Calendia
+  site: https://timeblock-calendar.herokuapp.com/
 
 - title: Photomosaic
   desc: An automation script for creating photomosaic effect
