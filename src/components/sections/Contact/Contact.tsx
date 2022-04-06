@@ -15,11 +15,11 @@ export const Contact: React.FC = () => {
         <h3 className={styles.contactSubtitle}>Contact information</h3>
         <p className={styles.info}>
           <Icon type="static" iconName="phone" size={25} />
-          <span>xxx-xxx-xxxx</span>
+          <span>316-871-6128</span>
         </p>
         <p className={styles.info}>
           <Icon type="static" iconName="email" size={25} />
-          <span>xxxx@email.com</span>
+          <span>huynhlbg@mail.uc.edu</span>
         </p>
       </div>
       <div className={styles.form}>
