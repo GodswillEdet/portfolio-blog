@@ -9,8 +9,8 @@ export const Header: React.FC = () => {
   }, []);
   return (
     <header className={`${styles.header} ${offsetTop >= 50 ? styles.headerScrolled : ""}`}>
-      <Link href="/">
-        <a className={styles.logo}>BHUYNHDEV</a>
+      <Link href="/#">
+        <a className={styles.logo}>BHUYNH.ME</a>
       </Link>
       <input type="checkbox" id="nav-toggle" className={`${styles.toggle} mobile-only`} />
       <label htmlFor="nav-toggle" className={`${styles.burger} mobile-only`}>
