@@ -40,11 +40,11 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({
         <div className={styles.footer}>
           <div className={styles.externalLinks}>
             <a href={repo} target="_blank" rel="noopener noreferrer">
-              <Icon type="static" iconName="repo" size={20} />
+              <Icon type="static" iconName="repo" size={20} title="Repo link" />
             </a>
             {site && (
               <a href={site}>
-                <Icon type="static" iconName="hyperlink" size={20} />
+                <Icon type="static" iconName="hyperlink" size={20} title="Live site" />
               </a>
             )}
           </div>

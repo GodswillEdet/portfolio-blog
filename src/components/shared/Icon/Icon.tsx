@@ -1,35 +1,34 @@
-import { BasicIcon } from "./BasicIcon";
+import { BasicIcon, BasicIconProps } from "./BasicIcon";
 import { Icon as IconType, Skill, Social } from "common/types";
 import styles from "./Icon.module.scss";
 
-interface StaticIcon {
+interface StaticIcon extends BasicIconProps {
   type: "static";
   iconName: IconType;
-  size: number;
 }
 
-interface SkillIcon {
+interface SkillIcon extends BasicIconProps {
   type: "skill";
   iconName: Skill;
-  size: number;
 }
 
-interface SocialIcon {
+interface SocialIcon extends BasicIconProps {
   type: "social";
   iconName: Social;
-  size: number;
 }
 
 type IconProps = StaticIcon | SkillIcon | SocialIcon;
 
-export const Icon: React.FC<IconProps> = ({ type, iconName, size }) => {
-  const StaticIcon = <BasicIcon iconName={iconName} size={size} />;
+export const Icon: React.FC<IconProps> = ({ type, iconName, size, ...props }) => {
+  const StaticIcon = <BasicIcon iconName={iconName} size={size} {...props} />;
 
-  const SocialIcon = <BasicIcon iconName={iconName} size={size} className={styles.socialIcon} />;
+  const SocialIcon = (
+    <BasicIcon iconName={iconName} size={size} className={styles.socialIcon} {...props} />
+  );
 
   const SkillIcon = (
     <figure className={styles.skillIcon}>
-      <BasicIcon iconName={iconName} size={size} />
+      <BasicIcon iconName={iconName} size={size} {...props} />
       <figcaption>{iconName}</figcaption>
     </figure>
   );

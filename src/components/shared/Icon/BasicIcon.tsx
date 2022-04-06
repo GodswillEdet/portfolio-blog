@@ -1,14 +1,13 @@
 import { Icon } from "common/types";
 import { getIconImagePath } from "common/utilities";
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
-interface BasicIconProps {
+export interface BasicIconProps extends Omit<ImageProps, "src"> {
   iconName: Icon;
   size: number;
-  className?: string;
 }
 
-export const BasicIcon: React.FC<BasicIconProps> = ({ iconName, size, className = "" }) => {
+export const BasicIcon: React.FC<BasicIconProps> = ({ iconName, size, ...props }) => {
   return (
     <Image
       width={size}
@@ -17,7 +16,7 @@ export const BasicIcon: React.FC<BasicIconProps> = ({ iconName, size, className 
       src={getIconImagePath(iconName)}
       alt={`${iconName} icon`}
       priority={true}
-      className={className}
+      {...props}
     />
   );
 };
