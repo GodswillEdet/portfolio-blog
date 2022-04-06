@@ -48,11 +48,11 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({
               </a>
             )}
           </div>
-          <div>
+          {/* <div>
             <a href="/#" className={styles.blogLink}>
               Learn more
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
