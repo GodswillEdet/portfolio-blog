@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
         <span></span>
       </label>
       <nav className={styles.nav}>
-        <ul className={styles.menu}>
+        <ul className={styles.list}>
           <li>
             <a href="#about">About me</a>
           </li>

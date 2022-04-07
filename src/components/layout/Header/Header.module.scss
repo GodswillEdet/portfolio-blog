@@ -33,7 +33,7 @@
   right: 0;
   top: 100%;
   padding-right: inherit; // Need to inherit padding from <header> because <nav> is absolute positioned (thus taken out of flow)
-  .menu {
+  .list {
     // Extra bottom padding on mobile
     padding-bottom: 10px;
     list-style-type: none;
@@ -61,7 +61,7 @@
 
 .toggle:checked ~ nav {
   transform: scaleY(1);
-  .menu a {
+  .list a {
     opacity: 1;
     transition: opacity 150ms ease-in-out 125ms;
   }
@@ -113,7 +113,7 @@
 
   .nav {
     all: unset;
-    .menu {
+    .list {
       padding: 0;
       flex-direction: row;
       gap: 1em;

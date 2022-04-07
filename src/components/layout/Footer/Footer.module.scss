@@ -1,0 +1,33 @@
+.footer {
+  background-color: #292929;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75em;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+
+  li a:hover {
+    color: #28afb0;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75em;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+  }
+}
