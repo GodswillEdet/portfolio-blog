@@ -12,11 +12,11 @@ export const About: React.FC = () => {
         </WatermarkHeader>
         <div className={styles.content}>
           <div className={styles.image}>
-            <img src="/images/about_me_2.jpg" alt="About me image" />
+            <img src="/images/about_me_4.jpg" alt="About me image" />
           </div>
           <div className={styles.text}>
             <div className={styles.intro}>
-              <p>Hi, I am Bao Huynh, a passionate web developer and a Computer Science student</p>
+              <p>Hi, I am Bao Huynh, a passionate web developer and a Computer Science student.</p>
               <p>
                 I enjoy making web applications that look great, feel fantastic, and perform well
                 using modern technogies.
