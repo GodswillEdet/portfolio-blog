@@ -34,6 +34,7 @@
   top: 100%;
   padding-right: inherit; // Need to inherit padding from <header> because <nav> is absolute positioned (thus taken out of flow)
   .list {
+    margin: 0;
     // Extra bottom padding on mobile
     padding-bottom: 10px;
     list-style-type: none;
