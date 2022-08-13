@@ -1,11 +1,12 @@
 import { WatermarkHeader } from "components/shared/WatermarkHeader";
 import styles from "./About.module.scss";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export const About: React.FC = () => {
   return (
     <section aria-labelledby="about" className={styles.about}>
-      <Fade bottom>
+      <Fade direction="up" triggerOnce>
         <WatermarkHeader text="About me">
           <h2 id="about">About me</h2>
         </WatermarkHeader>
