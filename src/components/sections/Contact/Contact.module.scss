@@ -1,10 +1,18 @@
 @use "styles/variables" as var;
 
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  gap: 2em;
+  > * {
+    width: 100%;
+  }
+}
+
+.form {
+  max-width: 80%;
+  margin: auto;
 }
 
 .title {
@@ -38,7 +46,7 @@
       outline: #80bdff 2px solid;
       box-shadow: 0 0 4px rgba(#80bdff, 0.5);
     }
-  }  
+  }
 }
 
 .infoContainer {
@@ -55,19 +63,6 @@
   .contactSubtitle {
     margin: 0.5em 0;
   }
-}
-
-.form {
-  width: 80%;
-}
-
-.test {
-  background: lightgoldenrodyellow;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
 }
 
 .submit {
@@ -95,11 +90,7 @@
 
 @media screen and (min-width: 50em) {
   .contact {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-
+    grid-template-columns: 1fr 1fr;
     h2 {
       text-align: left;
     }
@@ -107,7 +98,6 @@
 
   .infoContainer {
     text-align: left;
-    flex: 1;
     .info {
       justify-content: flex-start;
     }
@@ -115,7 +105,7 @@
 
   .form {
     margin-top: 1.3em;
-    flex: 1;
+    width: 100%;
   }
 
   @media (hover) {

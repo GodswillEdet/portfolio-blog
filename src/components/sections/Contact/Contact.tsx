@@ -1,12 +1,12 @@
 import { Icon } from "components/shared";
 import Image from "next/image";
 import styles from "./Contact.module.scss";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export const Contact: React.FC = () => {
   return (
     <section aria-labelledby="contact" className={styles.contact}>
-      <Fade bottom>
+      <Fade direction="up" triggerOnce>
         <div className={styles.infoContainer}>
           <header>
             <h2 id="contact" className={styles.title}>
