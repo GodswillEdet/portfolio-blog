@@ -1,0 +1,29 @@
+.skills {
+    h2 {
+        margin-bottom: 1em;
+    }
+}
+
+.skillList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    .category ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em 2em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .skillList {
+        flex-direction: row;
+        gap: 4em;
+        > * {
+            flex: 1;
+        }
+    }
+}

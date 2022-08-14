@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import styles from "styles/Home.module.scss";
-import { About, Hero, Contact, Projects } from "components/sections";
+import { About, Hero, Contact, Projects, Skills } from "components/sections";
 import projectsOverviewData from "data/projects.data.yaml";
 import { ProjectInfo } from "common/types";
 
@@ -13,6 +13,7 @@ const Home: NextPage<HomeStaticProps> = (props) => {
     <main className={styles.main} id="site-main">
       <Hero />
       <About />
+      <Skills />
       <Projects projectList={props.projectList} />
       <Contact />
     </main>
