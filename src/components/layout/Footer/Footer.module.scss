@@ -1,18 +1,16 @@
 .footer {
   background-color: #292929;
   text-align: center;
-  padding: 1.5rem;
+  padding: 0.5rem;
   font-size: 1.1rem;
 }
 
 .nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.75em;
 }
 
-.list {
-  list-style-type: none;
+.linklist {
   display: flex;
   gap: 1em;
 
@@ -24,9 +22,8 @@
 .socials {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.75em;
+  align-items: center;
   ul {
-    list-style: none;
     display: flex;
     gap: 2em;
   }

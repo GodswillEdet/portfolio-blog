@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <nav className={styles.nav}>
-        <ul className={styles.list}>
+        <ul className={styles.linklist}>
           <li>
             <a href="#">Home</a>
           </li>
