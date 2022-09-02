@@ -19,7 +19,7 @@ export const About: React.FC = () => {
               <p>Hi, I am Bao Huynh, a passionate web developer and a Computer Science student.</p>
               <p>
                 I enjoy making web applications that look great, feel fantastic, and perform well
-                using modern technogies.
+                using modern technologies.
               </p>
             </div>
             <div className={styles.skills}>
