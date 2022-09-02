@@ -40,7 +40,9 @@ export const Skills: React.FC = () => {
             <ul>
               {FRONTEND_SKILLS.map((skill) => (
                 <li key={skill}>
-                  <Icon type="skill" iconName={skill} size={40} />
+                  <div className={styles.flip}>
+                    <Icon type="skill" iconName={skill} size={40} />
+                  </div>
                 </li>
               ))}
             </ul>
@@ -50,7 +52,9 @@ export const Skills: React.FC = () => {
             <ul>
               {BACKEND_SKILLS.map((skill) => (
                 <li key={skill}>
-                  <Icon type="skill" iconName={skill} size={40} />
+                  <div className={styles.flip}>
+                    <Icon type="skill" iconName={skill} size={40} />
+                  </div>
                 </li>
               ))}
             </ul>
@@ -60,7 +64,9 @@ export const Skills: React.FC = () => {
             <ul key="developer">
               {DEVELOPER_SKILLS.map((skill) => (
                 <li key={skill}>
-                  <Icon type="skill" iconName={skill} size={40} />
+                  <div className={styles.flip}>
+                    <Icon type="skill" iconName={skill} size={40} />
+                  </div>
                 </li>
               ))}
             </ul>
