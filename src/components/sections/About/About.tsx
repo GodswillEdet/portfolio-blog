@@ -22,7 +22,7 @@ export const About: React.FC = () => {
                 using modern technologies.
               </p>
             </div>
-            <div className={styles.skills}>
+            {/* <div className={styles.skills}>
               <h3>Skills</h3>
               <ul>
                 <li>Typescript</li>
@@ -35,7 +35,7 @@ export const About: React.FC = () => {
                 <li>Postgres SQL</li>
                 <li>Git/Github</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </Fade>
